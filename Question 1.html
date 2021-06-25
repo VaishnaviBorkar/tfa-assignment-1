@@ -1,0 +1,192 @@
+<!-- 
+Q.1- What is HTML?Explain the following HTML elements using an appropriate example other than covered in the class :
+● <table>
+● <ol> & <ul> 
+● <form>, <input> and <label>
+● Self-Ending
+Ans -:
+   HTML stands for Hyper Text Markup Language. 
+   Hyper Text Markup Language is nothing but a Markup language which is used to create the web pages.
+   Hypertext is a text which links to another information.
+   Markup Language is a kind of set of instructions which is used to design,process and present the data and information or text on web page.
+
+● <table> :-
+    <table> tag is a block level element which is used to display the data in rows and column form(tabular form).
+    <table> tag consists of three other tags named as heading tag <th> row tag <tr> and data tag <td>.
+    <th> is used to create heading of the table cell.it will display the heading in bold by default.
+    <tr> is used to create the row of the table.
+    <td> is used to create the data or information to be store and display in the table.
+    there is no tag to create columns,when we create row the columns are created 
+    hence we insert the data in the table row wise in the table.
+    Syntaxt/Structure : <table> 
+                             <tr> <th></th> </tr>
+                             <tr> <td></td> </tr>
+                        </table>     
+
+● <ol> & <ul> :-
+    <ol> & <ul> are the block-level elements in html which are used to create lists in the html document.
+    <ol> tag defines an orderd list.it is used to create and display the orderd list on the web page.
+    orderd list can be numerical or alphabetical by default it is numerical starts from 1.
+    type is an attribute of <ol> tag which is used to specify which type of list should be diplay on web page.
+    <ol> tags are used along with <li> (list) tags to create orderd list.
+    Syntax/Structure : <ol type="value"> <li> </li> ......</ol>
+  
+    <ul> defines the unorderd list.it is used to create and display the unorderd list.
+    <ul> tag is used to display bulleted list on the web page.
+    <ul> tags are used along with <li> (list) tags to create unorderd list.
+    Syntax/Structure : <ul> <li> </li> ......</ol>
+       
+● <form>, <input> and <label> :-
+   1) <form> :-
+         <form> is a block level element in html which is used to create the html forms to collect user input.
+         <form> tag has action attribute which is used to specify the url of the back-end script that will process the form.
+         the value of action attribute is the URL or absolute link of back-end.
+         form can contain lebels,different buttons,textfields,calender and more.
+        Syntax/Structure : <form action="value"> contains <lable> && <input> tags </form>
+   2) <input> :-
+         <input>tag is a self ending tag or singular tag in html.
+         It is a dedicated tag to get input from user.this tag is used within a form.
+        Attribute :
+         type is an attribute of <input> tag which is used to specify the type of input 
+         which is to be taken by user.
+        Syntax/Structure :  <input type="value"/>
+   3) <label> :-
+         The label element represents a caption in a user interface.
+         <label> tag is a html tag which is used to defines the label for other elements.
+         It shows the usability of other elements to the users.
+      Attribute : 
+         for ia an attribute of label tag which is used to specify the usability of label tag to the 
+         programmer.
+      Syntax/Structure : <label for="value"> label </label>    
+
+● Self-Ending tags :-
+        Self closing tags are the special tags in html which dont have closing tag.
+        Self closing tags are also called as singular tag.it doesnt require any clossing tag.
+        Example : <br/>,<hr/>,<input/>,<img/>.
+        Line breaks and horizontal rules are the most commonly used Self-Ending tags. 
+        <br/> is used for new line or to  breck the current line and move towards next line.
+        <hr/> is used to draw a horrizontal line.
+
+-->
+<!DOCTYPE html>
+<head>
+    <title>Assignment-1</title>
+</head>
+<body>
+     <!-- --------------------**1.Table Tag**------------------ -->
+    <H1>Table Tag</H1>
+     <!-- Employee Details Table -->
+    <table>
+      <tr>
+          <th>Emp_Name</th>
+          <th>Emp_Id</th>
+          <th>Salary</th>
+      </tr>
+      <tr>
+          <td>Raghav</td>
+          <td>101</td>
+          <td>45000</td>
+      </tr>
+      <tr>
+          <td>Misha</td>
+          <td>102</td>
+          <td>50000</td>
+      </tr>
+      <tr>
+          <td>Hemant</td>
+          <td>103</td>
+          <td>40000</td>
+      </tr>
+      <tr>
+          <td>John</td>
+          <td>111</td>
+          <td>30000</td>
+      </tr>
+   </table>
+   <hr/>
+   <!-- ----------------------**2.Orderd List**------------------ -->
+   <h1>ol tag </h1>
+    <h3>ol with Default type</h3>
+   <ol type>
+    <!--Vegetable list for making veggie pizza with default type-->
+       <li>Tomato</li>
+       <li>Garlic</li>
+       <li>Onions</li>
+       <li>Capsicum</li>
+       <li>Broccoli</li>
+       <li>Mashroom</li>
+       <li>Olives</li>
+       <li>Carrot</li>
+   </ol>    
+   <h3>ol with Alphabets</h3>
+    <ol type="A">
+        <li>Java</li>
+        <li>C</li>
+        <li>C++</li>
+    </ol>   
+    <h3>ol with Roman Numbers</h3>
+    <ol type="I">
+        <li>Apple</li>
+        <li>Google</li>
+        <li>Microsoft</li>
+        <li>Amazon</li>
+        <li>Netflix</li> 
+    </ol> <hr/> 
+      <!-- -------------------**3.Unorderd List**--------------------------- -->
+      <h1>Unorderd List</h1>
+      <!-- **List of Pestisides** -->
+     <ul>
+       <li>Spot</li>
+       <li>Phoskill</li>
+       <li>Diamond</li>
+       <li>King Fisher</li>
+       <li>Swipt</li>
+   </ul><hr/>
+
+   <!-- -----------------------**4.Form Tag,Lable tag and Input tag**----------------- -->
+    <h1> Form tag</h1>
+    <!-- Student Information form -->
+    <form action="#">
+        <div>     
+          <label for="name">Student Name </label>
+           <input type="text"/>
+        </div><br/>
+        <div> 
+    
+       <div>     
+        <label for="College name">College</label>
+         <input type="text"/>
+      </div><br/>
+      <div>     
+        <label for="class name">Class</label>
+         <input type="text"/>
+      </div><br/>
+      <div>     
+        <label for="emaail id">Email ID  </label>
+        <input type="email"/>
+       </div><br/>
+       <div>     
+        <label for="mobile number">Phone No</label>
+         <input type="number"/>
+      </div><br/>
+
+        <label>Gender  </label>
+        <input type="radio"/><label>Male <input type="radio"/></label><label>Female </label>
+      </div><br/>
+     
+      <div>     
+        <label>D.O.B</lable>
+         <input type="date"/>
+      </div><br/>
+      <div>     
+         <input type="submit"/>
+      </div><br/>
+    </form><hr/>
+    <h1>
+        Self-Ending tag
+    </h1>
+    Example <br/>of<br/> br<br/> tag.<br/>
+    Example of hr tag. <hr/>
+    Submission DATE : 23 /06/2021 <hr/>
+ </body>
+</html>

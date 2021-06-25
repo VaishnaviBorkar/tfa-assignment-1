@@ -1,0 +1,52 @@
+<!-- 
+ Q. 4 - Describe the various HTML Elements required to embed the video in an document and 
+ further explain the following HTML attributes : 
+  ● <video> 
+  ● controls
+  ● src 
+  ● poster 
+  ● width 
+  ● height
+
+
+Ans :-
+<video> tag and <iframe> tag are used to embed the video in a web document.
+<video> tag is used to embed the video containt in a document such as movie,clips or othor videos stream.
+<iframe> tag is an inline frame which is used to embed the videos from YouTube to the current html document.
+Attributes of <video> and <iframe> tag :-
+    Controls,src,poster,width ,height
+● controls :- 
+         Controls is an attribute of video tag which is used to specify that
+         the video controls should be displayed in document.
+         Controls include :play,pause,volume,caption/subtitle and more. 
+  ● src :- 
+        src is an attribute of video tag which is used to specify the sours of video containt to be displayed.
+      
+  ● poster  : 
+        Poster is an attribute used to show the thumbnails on the videos.it specify which image should be
+        display at the time of the video downloading.
+
+  ● width  :
+         width attribute is used to specify the width of the video player on web document in pixels.
+
+  ● height :
+          width attribute is used to specify the height of the video player on web page in pixels.
+
+-->
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+      <h1>video from localmachin using video tag</h1>
+  <video width="700" height="350" poster="D:/FSD/Submit Assignments/Assignment1 SDt-23-06-2021/images/12.jpg" controls>
+    <source src="D:/FSD/Submit Assignments/Assignment1 SDt-23-06-2021/Video/dcpeteaser.mp4" type="video/mp4">
+    <source src="D:/FSD/Submit Assignments/Assignment1 SDt-23-06-2021/Video/dcpeteaser.ogg" type="video/ogg">
+  </video>
+  <p>Resize the browser window to see how the size of the video player will scale.</p>
+  <hr/>
+  <h1> YouTube Video using iframe</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/EAAzShmU0Tg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</body>
+</html>
